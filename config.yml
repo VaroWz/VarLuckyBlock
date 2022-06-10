@@ -1,0 +1,32 @@
+Luckyblock:
+  Name: "&e&lLucky&6&lBlock"
+  Lore: "&7Casse le block pour obtenir quelque chose !"
+
+Lang:
+  NoPerm: "&cTu n'as pas la permission de faire ça."
+  NoPlayer: "&cCe joueur existe pas ou n'est pas connecté."
+
+Events:
+  1:
+    Material: DIAMOND
+    Data: 0
+    Quantity: 32
+  2:
+    Material: EMERALD
+    Data: 0
+    Quantity: 16
+  3:
+    Material: DIAMOND_SWORD
+    Data: 0
+    Quantity: 1
+  4:
+    Material: TNT
+    Data: 0
+    Quantity: 64
+  5:
+    Material: GOLDEN_APPLE
+    Data: 0
+    Quantity: 32
+  
+
+  

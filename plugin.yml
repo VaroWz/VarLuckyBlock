@@ -1,0 +1,9 @@
+api: spigot.jar
+main: fr.varowz.main.VarLuckyBlock
+author: VaroWz
+version: 1.0.0
+name: VarLuckyBlock
+commands:
+  luckyblock:
+    description: Open help message
+    aliases: [lb]
