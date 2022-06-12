@@ -3,6 +3,7 @@ Luckyblock:
   Lore: "&7Casse le block pour obtenir quelque chose !"
 
 Lang:
+  Prefix: "&f[&eVarLuckyBlock&f] "
   NoPerm: "&cTu n'as pas la permission de faire ça."
   NoPlayer: "&cCe joueur existe pas ou n'est pas connecté."
 

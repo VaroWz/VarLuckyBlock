@@ -34,6 +34,7 @@ public class CommandLB implements CommandExecutor {
 					if(arg.equalsIgnoreCase("reload") || arg.equalsIgnoreCase("rl")) {
 						
 						main.reloadConfig();
+						main.prefix = main.getConfig().getString("Lang.Prefix").replace("&", "§");
 						sender.sendMessage(main.prefix + "§aConfig reloaded !");
 						
 					}
