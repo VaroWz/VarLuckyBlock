@@ -60,6 +60,20 @@ public class CommandLB implements CommandExecutor {
 							sender.sendMessage(main.getConfig().getString("Lang.NoPlayer").replace("&", "§"));
 						}
 					}
+					else if(arg.equalsIgnoreCase("giveall")) {
+						
+						for(Player player : Bukkit.getServer().getOnlinePlayers()) {
+							
+							int n = Integer.valueOf(arg2);
+							
+							for(int i =0; i<n; i++) {
+								player.getInventory().addItem(getLuckyBlock());
+							}
+							sender.sendMessage(main.prefix + "§aYou have give §e" + n + " §aluckyblocks to §eall");
+							
+						}
+						
+					}
 					else {
 						CommandHelp(sender);
 					}
@@ -103,6 +117,7 @@ public class CommandLB implements CommandExecutor {
 		sender.sendMessage("§8§m--------------------------------");
 		sender.sendMessage("§6/luckyblock §esee all commands.");
 		sender.sendMessage("§6/luckyblock give <player> [number] §eGive luckyblocks to a player.");
+		sender.sendMessage("§6/luckyblock giveall <number> §eGive luckyblocks to all player.");
 		sender.sendMessage("§6/luckyblock reload §eReload config.");
 		sender.sendMessage("§8§m--------------------------------");
 	}

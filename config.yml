@@ -4,6 +4,7 @@ Luckyblock:
 
 Lang:
   Prefix: "&f[&eVarLuckyBlock&f] "
+  ReceiveByGiveall: "&aTu as recu &2%givenumber% &aluckyblocks !"
   NoPerm: "&cTu n'as pas la permission de faire ça."
   NoPlayer: "&cCe joueur existe pas ou n'est pas connecté."
 
