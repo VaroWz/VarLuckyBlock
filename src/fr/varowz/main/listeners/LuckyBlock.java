@@ -38,8 +38,8 @@ public class LuckyBlock implements Listener {
 			if(skull.getOwner().equalsIgnoreCase("luck")) {
 				event.setCancelled(true);
 				blockbreak.setType(Material.AIR);
-				for(int i = 0; i<=20; i++) {
-					blockbreak.getWorld().playEffect(blockloc, Effect.FIREWORKS_SPARK, 1);
+				for(int i = 0; i<=main.getConfig().getInt("Luckyblock.ParticleQuantity"); i++) {
+					blockbreak.getWorld().playEffect(blockloc, Effect.EXPLOSION, 1);
 				}
 				
 				Random random = new Random();

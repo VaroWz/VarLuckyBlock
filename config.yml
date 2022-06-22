@@ -1,6 +1,7 @@
 Luckyblock:
   Name: "&e&lLucky&6&lBlock"
   Lore: "&7Casse le block pour obtenir quelque chose !"
+  ParticleQuantity: 200
 
 Lang:
   Prefix: "&f[&eVarLuckyBlock&f] "
