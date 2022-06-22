@@ -22,16 +22,16 @@ public class VarLuckyBlock extends JavaPlugin{
 		getCommand("luckyblock").setExecutor(new CommandLB(this));
 		getServer().getPluginManager().registerEvents(new LuckyBlock(this), this);
 		
-		Bukkit.getConsoleSender().sendMessage(prefix + "§aPlugin §7[§e1.0.2§7] §ais online.");
-		Bukkit.getConsoleSender().sendMessage(prefix + "§aPlugin §7[§e1.0.2§7] §cDev by VaroWz.");
-		Bukkit.getConsoleSender().sendMessage(prefix + "§aPlugin §7[§e1.0.2§7] §9Discord: https://discord.gg/SbKrKehCpq.");
+		Bukkit.getConsoleSender().sendMessage(prefix + "§aPlugin §7[§e1.0.3§7] §ais online.");
+		Bukkit.getConsoleSender().sendMessage(prefix + "§aPlugin §7[§e1.0.3§7] §cDev by VaroWz.");
+		Bukkit.getConsoleSender().sendMessage(prefix + "§aPlugin §7[§e1.0.3§7] §9Discord: https://discord.gg/SbKrKehCpq.");
 	}
 	
 	
 	@Override
 	public void onDisable() {
 		
-		Bukkit.getConsoleSender().sendMessage(prefix + "§cPlugin §7[§e1.0.2§7] §cis offline.");
+		Bukkit.getConsoleSender().sendMessage(prefix + "§cPlugin §7[§e1.0.3§7] §cis offline.");
 		
 	}
 	
