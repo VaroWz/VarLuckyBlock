@@ -54,6 +54,10 @@ public class CommandLB implements CommandExecutor {
 							Player player = Bukkit.getPlayer(arg2);
 							
 							player.getInventory().addItem(getLuckyBlock());
+							player.sendMessage(main.prefix+ main.getConfig().getString("Lang.ReceiveLuckyBlock")
+									.replace("&", "§")
+									.replace("%givenumber%", 1+""));
+							sender.sendMessage(main.prefix + "§aYou have give §e" + 1 + " §aluckyblock to §e" + player.getName());
 							
 						}
 						else {
@@ -69,6 +73,9 @@ public class CommandLB implements CommandExecutor {
 							for(int i =0; i<n; i++) {
 								player.getInventory().addItem(getLuckyBlock());
 							}
+							player.sendMessage(main.prefix+ main.getConfig().getString("Lang.ReceiveByGiveall")
+									.replace("&", "§")
+									.replace("%givenumber%", n+""));
 							sender.sendMessage(main.prefix + "§aYou have give §e" + n + " §aluckyblocks to §eall");
 							
 						}
@@ -95,12 +102,18 @@ public class CommandLB implements CommandExecutor {
 								for(int i =0; i<n; i++) {
 									player.getInventory().addItem(getLuckyBlock());
 								}
+								player.sendMessage(main.prefix+ main.getConfig().getString("Lang.ReceiveLuckyBlock")
+										.replace("&", "§")
+										.replace("%givenumber%", n+""));
 								sender.sendMessage(main.prefix + "§aYou have give §e" + n + " §aluckyblocks to §e"+player.getName());
 							}
 						}
 						else {
 							sender.sendMessage(main.getConfig().getString("Lang.NoPlayer").replace("&", "§"));
 						}
+					}
+					else {
+						CommandHelp(sender);
 					}
 				}
 				else {
