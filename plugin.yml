@@ -1,7 +1,7 @@
 api: spigot.jar
 main: fr.varowz.main.VarLuckyBlock
 author: VaroWz
-version: 1.0.3
+version: 1.0.4
 name: VarLuckyBlock
 commands:
   luckyblock:

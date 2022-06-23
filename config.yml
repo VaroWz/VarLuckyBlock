@@ -1,14 +1,14 @@
 Luckyblock:
   Name: "&e&lLucky&6&lBlock"
-  Lore: "&7Casse le block pour obtenir quelque chose !"
+  Lore: "&7Break the block to get something !"
   ParticleQuantity: 200
 
 Lang:
   Prefix: "&f[&eVarLuckyBlock&f] "
-  ReceiveLuckyBlock: "&aTu as reçu &e%givenumber% &aluckyblocks !"
-  ReceiveByGiveall: "&aTu as recu &e%givenumber% &aluckyblocks !"
-  NoPerm: "&cTu n'as pas la permission de faire ça."
-  NoPlayer: "&cCe joueur existe pas ou n'est pas connecté."
+  ReceiveLuckyBlock: "&aYou have received &e%givenumber% &aluckyblocks !"
+  ReceiveByGiveall: "&aYou have received &e%givenumber% &aluckyblocks !"
+  NoPerm: "&cYou don't have permission to do this."
+  NoPlayer: "&cThis player does not exist or is not connected."
 
 Events:
   1:
