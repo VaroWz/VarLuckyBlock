@@ -1,6 +1,9 @@
 Luckyblock:
   Name: "&e&lLucky&6&lBlock"
-  Lore: "&7Break the block to get something !"
+  Lore: 
+  - ""
+  - "&7Break the block to get something !"
+  - ""
   ParticleQuantity: 200
 
 Lang:

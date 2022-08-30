@@ -65,7 +65,4 @@ public class LuckyBlock implements Listener {
 		ItemStack it = new ItemStack(material, number, (byte)data);
 		return it;
 	}
-	
-	
-
 }

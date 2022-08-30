@@ -1,6 +1,8 @@
 package fr.varowz.main.commands;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -141,7 +143,14 @@ public class CommandLB implements CommandExecutor {
 		ItemStack luckyblock = new ItemStack(Material.SKULL_ITEM, 1, (byte)3);
 		SkullMeta meta = (SkullMeta) luckyblock.getItemMeta();
 		meta.setDisplayName(main.getConfig().getString("Luckyblock.Name").replace("&", "§"));
-		meta.setLore(Arrays.asList(main.getConfig().getString("Luckyblock.Lore").replace("&", "§")));
+		List<String> lore = main.getConfig().getStringList("Luckyblock.Lore");
+		List<String> loree = new ArrayList<String>();
+		for(int i = 0; i < lore.size(); i++) {
+			String line = lore.get(i).replace("&", "§");
+			
+			loree.add(line);
+		}
+		meta.setLore(loree);
 		meta.setOwner("luck");
 		luckyblock.setItemMeta(meta);
 		
