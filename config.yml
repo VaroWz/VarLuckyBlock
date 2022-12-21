@@ -26,6 +26,8 @@ Events:
     Material: DIAMOND_SWORD
     Data: 0
     Quantity: 1
+    Enchantment: 
+      DURABILITY: 3
   4:
     Material: TNT
     Data: 0

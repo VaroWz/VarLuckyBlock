@@ -9,11 +9,13 @@ import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockState;
 import org.bukkit.block.Skull;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import fr.varowz.main.VarLuckyBlock;
 
@@ -51,6 +53,11 @@ public class LuckyBlock implements Listener {
 							main.getConfig().getConfigurationSection("Events").getInt(string + ".Quantity"), 
 							main.getConfig().getConfigurationSection("Events").getInt(string + ".Data")
 							);
+					ItemMeta meta = Item.getItemMeta();
+					for(String stringg: main.getConfig().getConfigurationSection("Events."+string+".Enchantment").getKeys(false)) {
+						meta.addEnchant(Enchantment.getByName(stringg), main.getConfig().getInt("Events."+string+".Enchantment."+string), true);
+					}
+					Item.setItemMeta(meta);
 					this.event.put(amount, Item);
 					amount++;
 					
